@@ -6,9 +6,21 @@
   <meta name="author" content="huffstler">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="My blog; Full of words and opinions.">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-earthly.css" type="text/css">
   <title>My Blog; Not-so full of words and opinions.</title
 </head>
+
+<script>
+  initComments({
+    node: document.getElementById("comment-section"),
+    defaultHomeserverUrl: "https://matrix.org",
+    serverName: "matrix.org",
+    siteName: "huffstlerBlog",
+    commentSectionId: "section1"
+  })
+</script>
 
 <body>
   <h1>My blog.</h1>
@@ -35,6 +47,7 @@
       <li> <a href="srv/firstpost.html"> First post! </a> </li>
       <li> <a href="srv/inputHooks.html"> Creating an input element with React Hooks</a> </li>
     </ul>
+    <div id="comment-section"></div>
 </body>
 
 <hr/> 
